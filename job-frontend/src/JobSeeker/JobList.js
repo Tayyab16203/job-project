@@ -15,7 +15,7 @@ const Jobs = () => {
   const [action, setAction] = useState(false);
   const [jobSet, setjobSet] = useState("");
   const [jobs, setJobs] = useState([]);
-
+console.log('gggdddd',jobs)
   const closeModalHandler = () => {
     setModal(false);
   };
@@ -44,6 +44,7 @@ const Jobs = () => {
       .then((response) => {
         jobsData = response.data.jobs;
         setJobs(response.data.jobs);
+        console.log('job data',jobsData);
       })
       .catch((err) => {
         console.log(err);
