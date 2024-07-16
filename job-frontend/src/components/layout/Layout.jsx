@@ -7,7 +7,7 @@ import Navigation from "../navigation/Navigation";
 const Layout = (props) => {
   return (
     <div>
-      <Navigation />
+      <Navigation/>
       {/* <MyNavigation /> */}
       <div>{props.children}</div>
     </div>
